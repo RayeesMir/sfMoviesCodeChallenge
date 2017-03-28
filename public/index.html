@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="MoviesMap">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>SF Movies</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+ 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    </script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTH2d_HUUpZCqCxq3gDN7gD9E-D2gFwaE">
+    </script>
+
+    <!-- <script src="//maps.googleapis.com/maps/api/js?sensor=false"></script> -->
+
+
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" type="text/css" />
+    <script src="app/app.js"></script>
+
+  </head>
+  <body ng-controller="mainCtrl">   
+  <h2 class="text-center">Movie Search</h2>
+  <div id="map"></div> 
+
+  <div style="margin-bottom: 20px" class="col-xs-6 col-xs-offset-3 text-center">
+  	<input type="text" ng-model="movieSelected" placeholder="" uib-typeahead="m as m.title for m in getMovies($viewValue)"   typeahead-no-results="noResults" typeahead-on-select ="getLatlang($item, $model, $label, $event)" class="form-control">
+
+  </div>
+  <div id="container">
+  	<map id="map-canvas" geolocation = "geolocation"></map>	
+  </div>
+  
+
+  </body>
+</html>

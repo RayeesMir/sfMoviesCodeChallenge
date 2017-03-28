@@ -35,7 +35,7 @@
    ### FrontEnd ###
       *  Angular.js
       *  Bootstrap
-### Features
+### Features/Challenges 
   * Fetching Data from DataSF Data Source 
   * Storing Data in MongoDB So that there is No issues in case of DataSF data Source is down.
     After Every 30 days Data Source is check for new Movies.   

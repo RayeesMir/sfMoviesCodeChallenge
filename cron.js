@@ -16,7 +16,7 @@ module.exports = function Cron() {
 
 		agenda.on('ready', function() {
 			console.log("load movies in");
-			agenda.every('30 minutes', 'load movies in database');
+			agenda.every('30 days', 'load movies in database');
 			agenda.start();
 		});
 	})();

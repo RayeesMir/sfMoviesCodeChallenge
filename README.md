@@ -47,5 +47,4 @@
 
 ### Who do I talk to? ###
 
-* mail me on mirrayees859@gmail.com
 * feel free to raise issue

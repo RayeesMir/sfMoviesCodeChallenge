@@ -1,8 +1,6 @@
 
 # San Francisco Movies Search
 
-### Live Demo 
-   http://139.59.20.72:3000/ (May Not Be Available After Sometime)
    
 ### What is this repository for? ###
 
